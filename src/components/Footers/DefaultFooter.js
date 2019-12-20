@@ -13,46 +13,23 @@ function DefaultFooter() {
         <Container>
           <nav>
             <ul>
-              <li>
-                <a
-                  href="https://www.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  Creative Tim
-                </a>
+              <li> 
+                150 Morning Sun Avenue
+                Mill Valley, CA 94941
               </li>
+              <br />
               <li>
-                <a
-                  href="http://presentation.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="http://blog.creative-tim.com?ref=nukr-default-footer"
-                  target="_blank"
-                >
-                  Blog
-                </a>
+                Phone: (415) 381-2209
               </li>
             </ul>
           </nav>
           <div className="copyright" id="copyright">
-            © {new Date().getFullYear()}, Designed by{" "}
+            © {new Date().getFullYear()}, Designed & Coded by{" "}
             <a
-              href="https://www.invisionapp.com?ref=nukr-default-footer"
+              href="https://github.com/sagdish"
               target="_blank"
             >
-              Invision
-            </a>
-            . Coded by{" "}
-            <a
-              href="https://www.creative-tim.com?ref=nukr-default-footer"
-              target="_blank"
-            >
-              Creative Tim
+              Sagdi Formanov
             </a>
             .
           </div>

@@ -3,6 +3,7 @@ import React from "react";
 // reactstrap components
 import { Button, Container } from "reactstrap";
 
+const ARClogo = require('../../white-logo.png');
 // core components
 
 function LandingPageHeader() {
@@ -23,17 +24,25 @@ function LandingPageHeader() {
   });
   return (
     <>
-      <div className="page-header page-header-small">
+      {/* <div className="page-header page-header-small"> */}
+      <div className="page-header">
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/bg6.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/layli-background.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
         <div className="content-center">
           <Container>
-            <h1 className="title">This is our great company.</h1>
+            {/* <h1 className="title">ARC Registry Counselors</h1> */}
+
+            {/* ARC logo image: */}
+              <div style={{ width:"65%", margin: "auto"}}>
+                <img src={ARClogo} alt='' />
+              </div>
+            <br />
+
             <div className="text-center">
               <Button
                 className="btn-icon btn-round"

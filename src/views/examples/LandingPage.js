@@ -34,17 +34,15 @@ function LandingPage() {
       <ExamplesNavbar />
       <div className="wrapper">
         <LandingPageHeader />
-        <div className="section section-about-us">
+        <div className="section section-about-us" id="about-us">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
                 <h2 className="title">Who we are?</h2>
-                <h5 className="description">
-                  According to the National Oceanic and Atmospheric
-                  Administration, Ted, Scambos, NSIDClead scentist, puts the
-                  potentially record low maximum sea ice extent tihs year down
-                  to low ice extent in the Pacific and a late drop in ice extent
-                  in the Barents Sea.
+                <h5 className="description" style={{fontWeight: "bold" }}>
+                ARC Registry Counselors, Inc. provides contract staffing services to correctional facilities and hospitals 
+                in California who require assistance in locating physicians, mental health professionals, 
+                and allied/ancillary healthcare professionals.
                 </h5>
               </Col>
             </Row>
@@ -60,11 +58,12 @@ function LandingPage() {
                     }}
                   >
                     <p className="blockquote blockquote-info">
-                      "Over the span of the satellite record, Arctic sea ice has
-                      been declining significantly, while sea ice in the
-                      Antarctichas increased very slightly" <br></br>
+                      "Psychology has not always existed as it has today. 
+                      In fact, it is considered a relatively young discipline, 
+                      although as one eminent psychologist explained, 
+                      it has a short past but a long history." <br></br>
                       <br></br>
-                      <small>-NOAA</small>
+                      <small></small>
                     </p>
                   </div>
                   <div
@@ -84,20 +83,13 @@ function LandingPage() {
                     }}
                   ></div>
                   <h3>
-                    So what does the new record for the lowest level of winter
-                    ice actually mean
+                    Why Work Here?
                   </h3>
                   <p>
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens with climate change. Even if the
-                    Arctic continues to be one of the fastest-warming regions of
-                    the world, it will always be plunged into bitterly cold
-                    polar dark every winter. And year-by-year, for all kinds of
-                    natural reasons, there’s huge variety of the state of the
-                    ice.
+                  ARC is owned and operated by a Clinical Psychologist who knows first hand 
+                  the rewarding niches available in correctional settings.
                   </p>
-                  <p>
+                  {/* <p>
                     For a start, it does not automatically follow that a record
                     amount of ice will melt this summer. More important for
                     determining the size of the annual thaw is the state of the
@@ -115,13 +107,13 @@ function LandingPage() {
                     polar dark every winter. And year-by-year, for all kinds of
                     natural reasons, there’s huge variety of the state of the
                     ice.
-                  </p>
+                  </p> */}
                 </Col>
               </Row>
             </div>
           </Container>
         </div>
-        <div className="section section-team text-center">
+        {/* <div className="section section-team text-center">
           <Container>
             <h2 className="title">Here is our team</h2>
             <div className="team">
@@ -253,11 +245,11 @@ function LandingPage() {
               </Row>
             </div>
           </Container>
-        </div>
-        <div className="section section-contact-us text-center">
+        </div> */}
+        <div className="section section-contact-us text-center" id="contact-msg">
           <Container>
             <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your project is very important to us.</p>
+            <p className="description">Your input is very important to us.</p>
             <Row>
               <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
