@@ -19,7 +19,7 @@ import {
 function ExamplesNavbar() {
   const [navbarColor, setNavbarColor] = useState("navbar-transparent");
   const [collapseOpen, setCollapseOpen] = useState(false);
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
@@ -67,30 +67,44 @@ function ExamplesNavbar() {
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
               <DropdownItem header tag="a">
-                Dropdown header
+                Open Positions
+              </DropdownItem>
+              {/* <DropdownItem href="#https://www.ziprecruiter.com/c/ARC-Registry-Counselors/Jobs" target="_blank" onClick={e => e.preventDefault()}> */}
+              <DropdownItem href="https://www.ziprecruiter.com/c/ARC-Registry-Counselors/Jobs" target="_blank">
+                on ZipRecruiter.com
+              </DropdownItem>
+              <DropdownItem href="https://www.recruit.net/company-arc-registry-counselors-jobs" target="_blank">
+                on Recruit.net
               </DropdownItem>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Action
+                New listings coming soon...
               </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Another action
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
-                Something else here
-              </DropdownItem>
-              <DropdownItem divider></DropdownItem>
+              {/* <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 Separated link
               </DropdownItem>
               <DropdownItem divider></DropdownItem>
               <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
                 One more separated link
-              </DropdownItem>
+              </DropdownItem> */}
             </DropdownMenu>
           </UncontrolledDropdown>
           <div className="navbar-translate">
             <NavbarBrand
-              href="#contact-msg"
+
+              onClick={() => {
+                document.documentElement.classList.toggle("nav-open");
+                setCollapseOpen(false);
+                setToggle(!toggle);
+              }}              
+
+              // onClick={(e) => {
+              //   // e.preventDefault();
+              //   setToggle(!toggle);
+
+              // }}
+              href={toggle ? '#contact-msg' : "#top"}
+              // href="#contact-msg"
               // target="_blank"
               id="navbar-brand"
             >
@@ -130,7 +144,7 @@ function ExamplesNavbar() {
                   Contact Us
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink
                   href="#"
                   target="_blank"
@@ -168,7 +182,7 @@ function ExamplesNavbar() {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
-              </NavItem>
+              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

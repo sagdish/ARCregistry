@@ -17,8 +17,7 @@ function DefaultFooter() {
                 150 Morning Sun Avenue
                 Mill Valley, CA 94941
               </li>
-              <br />
-              <li>
+              <li style={{marginLeft: 15}}>
                 Phone: (415) 381-2209
               </li>
             </ul>
