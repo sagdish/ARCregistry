@@ -3,7 +3,7 @@ import React from "react";
 // reactstrap components
 import { Button, Container } from "reactstrap";
 
-const ARClogo = require('../../white-logo.png');
+const ARClogo = require('../../assets/img/white-logo.png');
 // core components
 
 function LandingPageHeader() {
@@ -45,7 +45,7 @@ function LandingPageHeader() {
               </div>
             <br />
 
-            <div className="text-center">
+            {/* <div className="text-center">
               <Button
                 className="btn-icon btn-round"
                 color="info"
@@ -70,7 +70,7 @@ function LandingPageHeader() {
               >
                 <i className="fab fa-google-plus"></i>
               </Button>
-            </div>
+            </div> */}
           </Container>
         </div>
       </div>

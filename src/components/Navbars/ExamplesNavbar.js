@@ -140,6 +140,11 @@ function ExamplesNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="#positions">
+                  Positions
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="#contact-msg">
                   Contact Us
                 </NavLink>
