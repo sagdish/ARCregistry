@@ -1,7 +1,8 @@
 import React from "react";
-
 // reactstrap components
 import { Button, Container } from "reactstrap";
+
+import  altBackground from "assets/img/mark-galer-6WOqqX-slV4-unsplash.jpg"
 
 const ARClogo = require('../../assets/img/white-logo.png');
 // core components
@@ -28,13 +29,20 @@ function LandingPageHeader() {
     <>
       {/* <div className="page-header page-header-small"> */}
       <div className="page-header" id="top">
-        <div
+        {/* <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/layli-background.jpg") + ")"
+            // backgroundImage: "url(" + require("assets/img/layli-background.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/mark-galer-6WOqqX-slV4-unsplash.jpg") + ")"
           }}
           ref={pageHeader}
-        ></div>
+        ></div> */}
+        <img
+          className="page-header-image"
+          alt=""
+          src={altBackground}
+          ref={pageHeader}
+        />
         <div className="content-center">
           <Container>
             {/* <h1 className="title">ARC Registry Counselors</h1> */}
