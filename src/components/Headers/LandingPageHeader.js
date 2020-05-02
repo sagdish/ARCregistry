@@ -29,14 +29,6 @@ function LandingPageHeader() {
     <>
       {/* <div className="page-header page-header-small"> */}
       <div className="page-header" id="top">
-        {/* <div
-          className="page-header-image"
-          style={{
-            // backgroundImage: "url(" + require("assets/img/layli-background.jpg") + ")"
-            backgroundImage: "url(" + require("assets/img/mark-galer-6WOqqX-slV4-unsplash.jpg") + ")"
-          }}
-          ref={pageHeader}
-        ></div> */}
         <img
           className="page-header-image"
           alt=""

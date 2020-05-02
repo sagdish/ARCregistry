@@ -56,7 +56,6 @@ function ExamplesNavbar() {
             <DropdownToggle
               caret
               data-toggle="dropdown"
-              href="#pablo"
               id="navbarDropdown"
               tag="a"
               onClick={e => e.preventDefault()}
@@ -66,17 +65,20 @@ function ExamplesNavbar() {
               <span className="button-bar"></span>
             </DropdownToggle>
             <DropdownMenu aria-labelledby="navbarDropdown">
-              <DropdownItem header tag="a">
+              <DropdownItem 
+                href="#positions"
+                // header 
+                tag="a"
+              >
                 Open Positions
               </DropdownItem>
-              {/* <DropdownItem href="#https://www.ziprecruiter.com/c/ARC-Registry-Counselors/Jobs" target="_blank" onClick={e => e.preventDefault()}> */}
               <DropdownItem href="https://www.ziprecruiter.com/c/ARC-Registry-Counselors/Jobs" target="_blank">
                 on ZipRecruiter.com
               </DropdownItem>
-              <DropdownItem href="https://www.recruit.net/company-arc-registry-counselors-jobs" target="_blank">
+              {/* <DropdownItem href="https://www.recruit.net/company-arc-registry-counselors-jobs" target="_blank">
                 on Recruit.net
-              </DropdownItem>
-              <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+              </DropdownItem> */}
+              <DropdownItem href="#" onClick={e => e.preventDefault()}>
                 New listings coming soon...
               </DropdownItem>
               {/* <DropdownItem divider></DropdownItem>
@@ -107,6 +109,7 @@ function ExamplesNavbar() {
               // href="#contact-msg"
               // target="_blank"
               id="navbar-brand"
+              // style={{fontSize: "18px"}}
             >
               ARC Registry
             </NavbarBrand>
@@ -133,7 +136,7 @@ function ExamplesNavbar() {
             isOpen={collapseOpen}
             navbar
           >
-            <Nav navbar>
+            <Nav navbar style={{fontSize: "20px"}}>
               <NavItem>
                 <NavLink href="#about-us">
                   About Us
@@ -149,45 +152,6 @@ function ExamplesNavbar() {
                   Contact Us
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="twitter-tooltip"
-                >
-                  <i className="fab fa-twitter"></i>
-                  <p className="d-lg-none d-xl-none">Twitter</p>
-                </NavLink>
-                <UncontrolledTooltip target="#twitter-tooltip">
-                  Follow us on Twitter
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="facebook-tooltip"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
-                </NavLink>
-                <UncontrolledTooltip target="#facebook-tooltip">
-                  Like us on Facebook
-                </UncontrolledTooltip>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  href="#"
-                  target="_blank"
-                  id="instagram-tooltip"
-                >
-                  <i className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
-                </NavLink>
-                <UncontrolledTooltip target="#instagram-tooltip">
-                  Follow us on Instagram
-                </UncontrolledTooltip>
-              </NavItem> */}
             </Nav>
           </Collapse>
         </Container>

@@ -96,20 +96,29 @@ function LandingPage() {
         </div>
         <div className="section section-team text-center" id="positions">
           <Container>
-            <h2 className="title">Positions</h2>
+            <h2 className="title" style={{marginBottom: '0px'}}>Positions</h2>
             <div className="team">
               <Row>
                 <Col sm="12" md={{ size: 8, offset: 2 }}>
                   <div className="team-player">
-                    <h4 className="title">
+                    <h4 className="title" style={{marginTop: '0px'}}>
                       ARC Registry Counselors, Inc. is in need of Psychologist to provide services 
                       to California correctional facilities throughout the State. 
                       We have an urgent need for the following locations:
                     </h4>
-                    <p className="category text-info" style={{marginTop: "40px"}}>Stockton, CA</p>
-                    <p className="category text-info">Vacaville, CA</p>
-                    <p className="category text-info">Elk Grove, CA</p>
-                    <p className="description" style={{textAlign: 'left'}}>
+                    <p className="category text-info">In California: </p>
+                    <p className="category text-info">Stockton, Lancaster,
+                      Tehachapi,
+                      Wasco,
+                      San Diego,
+                      Blythe,
+                      Centinela,
+                      Calipatria,
+                      Vacaville,
+                      Elk Grove,
+                      </p>
+                    <p className="category text-info">... and many other locations! Please inquire for more information</p>
+                    <p className="description" style={{textAlign: 'left', color:'black', fontWeight: 'normal'}}>
                       Qualifications:
                       <br/>
                       1. Valid license issued by the California Board of Psychology.
@@ -118,8 +127,10 @@ function LandingPage() {
                       three (3) years performing services in a public or private institution. 
                       No forensic or correctional experience required.
                       <br/>
-                      For more information, please call (415) 381-2209 Layli at ARC Registry Counselors, Inc.
-                    </p>
+                      <p className="category text-info">
+                        For more information, please call (415) 381-2209
+                      </p>
+                        </p>
 
                   </div>
                 </Col>
@@ -130,10 +141,16 @@ function LandingPage() {
         </div>
         <div className="section section-contact-us text-center" id="contact-msg">
           <Container>
-            <h2 className="title">Want to work with us?</h2>
-            <p className="description">Your input is very important to us.</p>
+            <h2 className="title" style={{marginBottom: '40px'}}>Want to work with us?</h2>
+            <p className="category text-info" style={{fontWeight: 'bold', fontSize: 24}}>
+              Phone: (415) 381-2209
+            </p>
+            <p className="category text-info" style={{fontWeight: 'bold', fontSize: 24}}>
+              Email: Info@arcregistry.com
+            </p>
+            {/* <p className="description">Your input is very important to us.</p> */}
             <Row>
-              <Col className="text-center ml-auto mr-auto" lg="6" md="8">
+              {/* <Col className="text-center ml-auto mr-auto" lg="6" md="8">
                 <InputGroup
                   className={
                     "input-lg" + (firstFocus ? " input-group-focus" : "")
@@ -189,7 +206,7 @@ function LandingPage() {
                     Send Message
                   </Button>
                 </div>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
