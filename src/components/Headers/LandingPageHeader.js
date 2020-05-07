@@ -5,6 +5,7 @@ import { Button, Container } from "reactstrap";
 import  altBackground from "assets/img/mark-galer-6WOqqX-slV4-unsplash.jpg"
 
 const ARClogo = require('../../assets/img/white-logo.png');
+const ARClogo2 = require('../../assets/img/newLogo2020.png');
 // core components
 
 function LandingPageHeader() {
@@ -41,7 +42,7 @@ function LandingPageHeader() {
 
             {/* ARC logo image: */}
               <div style={{ width:"65%", margin: "auto"}}>
-                <img src={ARClogo} alt='' />
+                <img src={ARClogo2 } alt='' />
               </div>
             <br />
 
